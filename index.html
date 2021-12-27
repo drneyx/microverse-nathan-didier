@@ -1,3 +1,19 @@
+<style>
+#nav-bar{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 430px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+</style>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -37,8 +53,8 @@
       </video>
     </header>
 
-    <form id = "form">
-      <input type = "email" placeholder="email"  id = "email"> <br>
+    <form id = "form" action = "https://www.freecodecamp.com/email-submit">
+      <input type = "email" name = "email" placeholder="email"  id = "email"> <br>
 
       <input type = "submit" name="submit"  id = "submit"> 
 
